@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.product::before{
+content: "";
+position: fixed;
+width: 300%;
+height: 100%;
+background-color: cornflowerblue;
+left: 50%;
+top: 50%;
+transform: translateX(-50%) skew(10deg , -10deg);
+border-radius: 50%;
+z-index: -1;
+animation: wave 5s ease-in-out  infinite alternate;
+}
+@keyframes wave {
+    from{
+        transform: translateX(-50%) skew(10deg , -10deg);
+    }
+    to{
+        transform: translateX(-30%) skew(15deg , 0);
+    }
+}
+.container{
+    padding: 0 10px;
+    margin: 10px 20px;
+}
+
+.links , .product2 .links{
+    display: flex;
+}
+.links h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.links img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.links ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+.links ul li{
+    margin-right: 30px;
+}
+.links ul li a{
+    font-size: 25px;
+    color: black;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    flex-direction: column;
+}
+.container .text h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 100px;
+    font-family: cursive;
+    letter-spacing: 20px;
+    text-shadow: 0 0 12px blue , 0 0 50px rgb(192, 192, 192) , 0 0 100px blue;
+}
+.container .text a{
+    width: 200px;
+    height: 40px;
+    font-size: 31px;
+    border-radius: 20px;
+    color: cornflowerblue;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: center;
+}
+.component h4{
+text-align: center;
+font-size: 50px;
+color: cornflowerblue;
+margin-top: 60px;
+}
+.component .numbers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+    height: 300px;
+}
+.numbers .num{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-image: linear-gradient( white , cornflowerblue);
+width: 100px;
+height: 100px;
+color: darkblue;
+font-size: 25px;
+border-radius: 30px;
+}
+
+
+.Benefits{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.Benefits p , .buy-product p{
+    text-align: center;
+    font-size: 50px;
+    color: darkblue;
+}
+.Benefits-of-product{
+    margin:40px 90px;
+    display: flex;
+    background-color: #f0ffff8c
+}
+
+@media (max-width:960px) {
+    .Benefits-of-product{
+        display: block;
+    }
+}
+.Benefits-of-product img{
+    width: 300px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    }
+
+    .Benefits-of-product p{
+        font-size: 24px;
+        color: red;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 25px;
+        font-family: emoji;
+    }
+
+    .Benefits-of-product p span{
+        text-align: center;
+        font-size: 20px;
+        color: blue;
+    }
+
+    .buy-product {
+        background-color: #fff;
+        height: 100vh;
+        margin-top: 135px;
+    }
+
+.cards{
+    width: 100%;
+    height: 50%;
+    margin: 20px;
+}
+.cards .card1 , .card2 , .card3{
+   display: flex;
+}
+.cards .card1 img , .card2 img  {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+.card3 img{
+    width: 200px;
+    height: 350px;
+    border-radius: 20px;
+}
+.card1 pre , .card2 pre , .card3 pre{
+    font-size: 33px;
+    font-weight: bold;
+    margin-left: 61px;
+    margin-top: 35px;
+}
+
+.inc-dec{
+    background-color: #fff;
+    width: 35%;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    flex: 1;
+}
+.inc-dec span{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    font-weight: bold;
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.delivery{
+    display: flex;
+    justify-content: center;
+}
+.delivery .content{
+    display: flex;
+}
+.content img{
+    width: 300px;
+    border-radius: 80px;
+}
+.info h2{
+    padding-bottom: 36px;
+    font-size: 45px;
+    color: red;
+}
+form label{
+    color: darkblue;
+    font-size:30px ;
+    font-weight: bold;
+    line-height: 1.5;
+}
+form input{
+    width: 42%;
+    height: 34px;
+    border-radius: 32px;
+    font-size: 30px;
+}
+
+.info img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
